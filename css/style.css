@@ -149,8 +149,9 @@ img {
 
 /*styles for logo*/
 .logo {
-  display: inline-block;
-  height: 35px;
+  display: flex;
+  align-items: center;
+  height: 60px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -162,6 +163,10 @@ img {
 }
 .logo-type2 {
   color: var(--white);
+}
+.footer .logo {
+  align-items: flex-start;
+  height: 55px;
 }
 
 /*styles for navigation links*/
@@ -364,6 +369,7 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  overflow: auto;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -377,7 +383,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
   width: 528px;
   height: 581px;
 
@@ -463,7 +468,7 @@ img {
 .checkbox {
   width: 16px;
   height: 16px;
-  margin-right: 9px;
+  margin-right: 7px;
 }
 .modal-form-icon {
   position: absolute;
@@ -788,27 +793,22 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
 .footer .link {
   display: inline-block;
   font-style: normal;
-  margin-bottom: 10px;
-}
-.adress-link {
-  margin-top: 20px;
-  color: var(--white);
-}
-.footer-contacts {
-  color: var(--contacts-footer);
-}
-.footer-contacts,
-.adress-link {
   height: 21px;
   line-height: 1.71;
+  margin-bottom: 9px;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: linear;
+}
+.adress-link {
+  color: var(--white);
+}
+.footer-contacts {
+  color: var(--contacts-footer);
 }
 .footer h3 {
   font-weight: 700;
@@ -913,16 +913,21 @@ img {
 .close-btn:hover .close-btn-icon,
 .close-btn:focus .close-btn-icon,
 .close-btn:active .close-btn-icon,
-.hint:hover .modal-form-icon,
-.hint:active .modal-form-icon,
-.hint:focus .modal-form-icon {
+.modal-input-field:hover + .modal-form-icon,
+.modal-input-field:active + .modal-form-icon,
+.modal-input-field:focus + .modal-form-icon {
   fill: var(--hover);
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-
+.modal-input-field:focus {
+  background-color: #2195f30a;
+}
+.modal-input-field:invalid {
+  background-color: #ff002210;
+}
 .portfolio-link:hover,
 .portfolio-link:focus,
 .portfolio-link:active {
@@ -938,21 +943,6 @@ img {
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
-}
-.txs h2 {
-  font-weight: 900;
-  font-size: 100px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--hover);
-}
-.txs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
 }
 :disabled {
   background-color: var(--text-grey);
