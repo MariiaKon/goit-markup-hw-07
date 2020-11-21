@@ -149,7 +149,7 @@ img {
 
 /*styles for logo*/
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   height: 60px;
   font-family: Raleway;
