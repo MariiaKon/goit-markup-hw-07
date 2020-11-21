@@ -466,12 +466,6 @@ img {
   color: var(--hover);
   text-decoration: underline;
 }
-.checkbox {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 .checkbox-icon {
   position: absolute;
   display: inline;
