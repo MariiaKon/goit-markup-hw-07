@@ -913,6 +913,9 @@ img {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
+.submit-modal-btn:focus {
+  border: 2px solid var(--title-black);
+}
 .filter-button:hover,
 .filter-button:active,
 .filter-button:focus {
@@ -1001,4 +1004,8 @@ img {
 :disabled {
   background-color: var(--text-grey);
   color: var(--white);
+}
+:active,
+button:focus {
+  outline: none;
 }
