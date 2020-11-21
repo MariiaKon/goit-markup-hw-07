@@ -503,6 +503,9 @@ img {
   color: var(--contacts-footer);
   background-color: inherit;
 }
+.subscribe-field::placeholder {
+  color: var(--contacts-footer);
+}
 
 /*styles for advantages section*/
 .advantages h3 {
