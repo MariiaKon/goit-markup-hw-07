@@ -489,6 +489,13 @@ img {
   transition-duration: 150ms;
   transition-timing-function: linear;
 }
+.checkbox:focus + .checkbox-icon {
+  transform: scale(1.2);
+
+  border: 2px solid var(--hover);
+  border-radius: 2px;
+  transition-property: border;
+}
 .checkbox:checked + .checkbox-icon {
   background-image: url(../images/icon/sprite/SVG/check-modal.svg);
   background-color: var(--hover);
@@ -497,6 +504,13 @@ img {
   transition-property: background-image background-color;
   transition-duration: 150ms;
   transition-timing-function: linear;
+}
+.checkbox:focus:checked + .checkbox-icon {
+  transform: scale(1.2);
+
+  border: 2px solid var(--title-black);
+  border-radius: 2px;
+  transition-property: border;
 }
 .modal-form-icon {
   position: absolute;
@@ -511,7 +525,6 @@ img {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-
 .subscribe-form {
   display: inline-flex;
 }
@@ -939,12 +952,17 @@ img {
 }
 .client-site:hover,
 .client-site:active,
-.client-site:focus,
-.hint:hover .modal-input-field,
-.hint:focus .modal-input-field,
-.hint:active .modal-input-field {
+.client-site:focus {
   border: 1px solid var(--hover);
 
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.modal-input-field:focus,
+.modal-input-field:active {
+  border: 1px solid var(--hover);
+  outline: none;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: linear;
