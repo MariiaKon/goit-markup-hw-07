@@ -118,7 +118,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -166,7 +166,7 @@ img {
 }
 .footer .logo {
   align-items: flex-start;
-  height: 55px;
+  height: 30px;
 }
 
 /*styles for navigation links*/
@@ -321,6 +321,7 @@ img {
 .subscribe-btn {
   padding: 10px 29px;
   margin-left: 12px;
+  margin-top: 20px;
 }
 .subscribe-btn-icon {
   width: 24px;
@@ -520,11 +521,12 @@ img {
   transition-timing-function: linear;
 }
 .subscribe-form {
-  display: inline-flex;
+  display: flex;
 }
 .subscribe-field {
   width: 358px;
   height: 50px;
+  margin-top: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -545,6 +547,7 @@ img {
 /*styles for advantages section*/
 .advantages h3 {
   width: 270px;
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
@@ -639,16 +642,11 @@ img {
 }
 .team-list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .team-list .card:not(:first-child) {
   margin-left: 30px;
 }
-.team-list .card:nth-child(n + 5) {
-  margin-top: 30px;
-}
-
 .team h3 {
   height: 19px;
   font-weight: 500;
@@ -720,12 +718,8 @@ img {
 .clients .list-item:not(:first-child) {
   margin-left: 30px;
 }
-.clients .list-item:nth-child(n + 7) {
-  margin-top: 30px;
-}
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -784,17 +778,13 @@ img {
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.portfolio-item:nth-child(3n + 2) {
-  margin-left: 27px;
-  margin-right: 27px;
-}
 .portfolio {
   padding: 94px 0px;
 }
 .portfolio-list {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 .portfolio-link {
   display: inline-block;
@@ -836,25 +826,29 @@ img {
 /*styles for footer*/
 .footer {
   background: var(--bg-dark);
-  padding: 60px 0px 50px 0px;
+  padding-top: 60px;
 }
 .footer-info {
   display: flex;
   justify-content: space-between;
+}
+.footer-info div {
+  padding-bottom: 60px;
 }
 .footer .link {
   display: inline-block;
   font-style: normal;
   height: 21px;
   line-height: 1.71;
-  margin-bottom: 9px;
+  margin-top: 9px;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-.adress-link {
+.footer .adress-link {
   color: var(--white);
+  margin-top: 20px;
 }
 .footer-contacts {
   color: var(--contacts-footer);
@@ -865,7 +859,6 @@ img {
   text-transform: uppercase;
   color: var(--white);
   margin-top: 12px;
-  margin-bottom: 20px;
 }
 .footer .social-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -879,7 +872,9 @@ img {
   height: 20px;
   fill: var(--white);
 }
-
+.footer .social-links-list {
+  margin-top: 20px;
+}
 /*styles for interractive elements*/
 .link:hover,
 .link:active,
@@ -980,10 +975,14 @@ img {
   transition-timing-function: linear;
 }
 .modal-input-field:focus {
-  background-color: #2195f30a;
+  background-color: #2195f305;
 }
 .modal-input-field:invalid {
-  background-color: #ff002210;
+  background-color: #c708210a;
+  border: 1px solid #c70821b9;
+}
+.modal-input-field:invalid + .modal-form-icon {
+  fill: #c70821b9;
 }
 .portfolio-link:hover,
 .portfolio-link:focus,
