@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container head-box">
+    <div class="container box">
       <nav class="nav-bar">
           <a class="logo" href="./index.html"> Web<span class="logo logo-type1">Studio</span></a>
           <ul class="nav">
@@ -22,14 +21,14 @@
       <ul class="header-contacts">
           <li class="list-item"> 
               <a class="link" href="mailto:info@devstudio.com">
-                <svg class="mail-icon" width="16" height="14">
+                <svg class="mail-icon" width="18" height="16">
                 <use href="./images/icon/sprite/symbol-defs.svg#mail"></use>
                 </svg>
               info@devstudio.com </a>
           </li>
           <li class="list-item">
               <a class="link" href="tel:+380961111111">
-                <svg class="tel-icon" width="12" height="14">
+                <svg class="tel-icon" width="14" height="16">
                 <use href="./images/icon/sprite/symbol-defs.svg#phone"></use>
                 </svg>
               +38 096 111 11 11 </a>
@@ -43,7 +42,7 @@
     <section class="hero-section">
       <div class="container hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="order-button" type="button" data-modal-open>Заказать услугу</button>
+        <button class="btn order" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -294,8 +293,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-info">
+    <div class="container box">
           <div>
             <a class="logo" href="./index.html"> Web<span class="logo logo-type2" >Studio</span></a>
             <address>
@@ -344,14 +342,13 @@
             <h3>Подпишитесь на рассылку</h3>
             <form action="index.html" class="subscribe-form">
               <input class="subscribe-field" type="email" placeholder="E-mail">
-              <button type="submit" class="subscribe-btn"> Подписаться
+              <button type="submit" class="btn subscribe"> Подписаться
                 <svg class="subscribe-btn-icon" width="24" height="24">
                   <use href="./images/icon/sprite/symbol-defs.svg#send"></use>
                 </svg>
               </button>
             </form>
           </div>
-      </div>
     </div>
   </footer>
 
@@ -393,7 +390,7 @@
                     <span class="checkbox-icon"></span> <span>Соглашаюсь с рассылкой и принимаю  <a href="">Условия договора</a>
                     </span>
                 </label>
-                <button class="submit-modal-btn">Отправить</button>
+                <button class="btn submit-modal">Отправить</button>
             </form>
         </div>
   </div>
