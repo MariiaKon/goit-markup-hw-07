@@ -7,13 +7,14 @@
   padding: 32px 0px;
   position: relative;
   color: $title-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
   &:hover,
   &:focus {
     color: $accent-color;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: linear;
   }
 }
 .header .list-item:not(:first-child) {
